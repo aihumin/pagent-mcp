@@ -1,0 +1,23 @@
+{
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "useTabs": false,
+    "printWidth": 80,
+    "tabWidth": 4,
+    "bracketSameLine": true,
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "singleQuote": false,
+    "trailingComma": "all",
+    "proseWrap": "always",
+    "ignorePatterns": [
+        "**/dist/**",
+        "**/build/**",
+        "**/.svelte-kit/**",
+        "**/.astro/**",
+        "**/.vercel/**",
+        "**/.next/**",
+        "**/coverage/**",
+        "**/*.astro",
+        "pnpm-lock.yaml"
+    ]
+}

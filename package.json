@@ -1,0 +1,57 @@
+{
+    "name": "@pagent/mcp",
+    "version": "0.1.0",
+    "description": "Connect pagent to Claude, ChatGPT, Codex, Cursor and other MCP clients. Run A/B tests from your coding agent.",
+    "keywords": [
+        "ab-testing",
+        "claude",
+        "codex",
+        "conversion-rate-optimization",
+        "cro",
+        "cursor",
+        "experimentation",
+        "mcp",
+        "model-context-protocol",
+        "pagent"
+    ],
+    "homepage": "https://www.pagent.ai/mcp",
+    "bugs": {
+        "url": "https://github.com/aihumin/pagent-mcp/issues"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aihumin/pagent-mcp.git"
+    },
+    "bin": {
+        "pagent-mcp": "./dist/cli.js"
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "type": "module",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run",
+        "check": "tsc --noEmit",
+        "lint": "oxlint",
+        "format": "oxfmt --write .",
+        "format:check": "oxfmt --check ."
+    },
+    "devDependencies": {
+        "@types/node": "26.2.0",
+        "oxfmt": "0.59.0",
+        "oxlint": "1.74.0",
+        "typescript": "6.0.3",
+        "vitest": "4.1.4"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "packageManager": "pnpm@11.1.2"
+}

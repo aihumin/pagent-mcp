@@ -1,0 +1,45 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "plugins": ["typescript", "unicorn", "oxc"],
+    "categories": {
+        "correctness": "error"
+    },
+    "rules": {
+        "no-unused-vars": "warn",
+        "no-loss-of-precision": "warn",
+        "no-control-regex": "warn",
+        "no-unused-expressions": "warn",
+        "no-unassigned-vars": "warn",
+        "no-ex-assign": "warn",
+        "no-useless-escape": "warn",
+        "no-useless-catch": "warn",
+        "no-unsafe-optional-chaining": "warn",
+        "no-empty-pattern": "warn",
+        "no-duplicate-case": "warn",
+        "unicorn/no-new-array": "warn",
+        "unicorn/no-useless-spread": "warn",
+        "unicorn/no-empty-file": "warn",
+        "unicorn/no-useless-length-check": "warn",
+        "unicorn/no-useless-fallback-in-spread": "warn",
+        "typescript/no-this-alias": "warn",
+        "typescript/no-non-null-asserted-optional-chain": "warn",
+        "typescript/prefer-as-const": "warn",
+        "typescript/triple-slash-reference": "warn",
+        "oxc/const-comparisons": "warn"
+    },
+    "env": {
+        "builtin": true
+    },
+    "ignorePatterns": [
+        "**/dist/**",
+        "**/build/**",
+        "**/.svelte-kit/**",
+        "**/.astro/**",
+        "**/.vercel/**",
+        "**/.next/**",
+        "**/coverage/**",
+        "**/prebuilt/**",
+        "**/env.d.ts",
+        "**/*.min.js"
+    ]
+}
