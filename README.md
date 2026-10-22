@@ -1,23 +1,43 @@
-# @pagent/mcp
+# pagent: the A/B testing MCP server for coding agents
 
-Connect [pagent](https://www.pagent.ai) to your coding agent in one command.
+`@pagent/mcp` connects Claude, ChatGPT, Claude Code, Codex, Cursor and any other
+MCP client to [pagent](https://www.pagent.ai), so your agent can run A/B tests
+on your live website. Set it up in one command:
 
 ```bash
 npx @pagent/mcp init
 ```
 
 This finds the MCP clients on your machine and points them at pagent's hosted
-server. Nothing else to copy, no config format to choose.
+MCP server. Nothing else to copy, no config format to choose.
 
 ## What pagent is
 
-pagent is an AI A/B testing agent. It reads your pages, writes the hypothesis,
-builds the variation as real code on your design system, runs the test on your
-live site with Bayesian statistics, and learns what to try next. Your team
-reviews each variation before it goes live.
+pagent is an AI A/B testing agent, an AI Experiment Engineer for your website.
+It reads your pages, writes the hypothesis, builds the variation as real code on
+your design system, runs the test on your live site with Bayesian statistics,
+and learns what to try next. Your team reviews each variation before it goes
+live. pagent adds to your testing stack; it does not replace it.
 
-With this connector your agent joins that loop: it reads results, captures the
+With this MCP server your agent joins that loop: it reads results, captures the
 next hypothesis, and starts the next test from the chat you already use.
+
+## Can Claude or ChatGPT run A/B tests on my live website?
+
+Yes, once they are connected to an experimentation platform through MCP. A
+language model on its own cannot serve variations to your visitors or measure
+conversions. With the pagent MCP server, Claude, ChatGPT or your coding agent
+can start, pause and stop tests on your live site and read their results, while
+pagent builds the variations, splits the traffic and runs the statistics.
+
+Things you can ask once connected:
+
+- "Which of our running A/B tests is winning, and how sure are we?"
+- "Compare last month's pricing page tests and tell me what changed on the
+  page."
+- "Capture a hypothesis: a shorter signup form will raise trial starts. Turn it
+  into a test."
+- "Pause the checkout test and roll it back."
 
 ## What your agent can do
 
@@ -85,7 +105,7 @@ so there are tests and visitor data to read.
 
 ## Links
 
-- [pagent MCP server](https://www.pagent.ai/mcp)
+- [pagent MCP server for A/B testing](https://www.pagent.ai/mcp)
 - [Setup guide](https://www.pagent.ai/docs/guides/mcp)
 - [The AI A/B testing agent](https://www.pagent.ai/ai-ab-testing-agent)
 
