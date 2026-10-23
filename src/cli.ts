@@ -14,7 +14,7 @@ import {
 } from "./clients.js";
 import { mergeConfig, readIfPresent, writeConfig } from "./config.js";
 
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 
 interface Options {
     readonly command: string;
